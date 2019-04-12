@@ -1,5 +1,0 @@
-https://codeburst.io/full-stack-single-page-application-with-vue-js-and-flask-b1e036315532
-https://testdriven.io/blog/developing-a-single-page-app-with-flask-and-vuejs/
-
-Cognito
-https://qiita.com/jp_ibis/items/4fffb3c924504f0ce6fb
