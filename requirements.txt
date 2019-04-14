@@ -1,3 +1,4 @@
 Flask==1.0.2
 boto3==1.9.77
-gunicorn
+gunicorn==19.9.0
+requests==2.20.1
