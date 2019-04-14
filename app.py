@@ -1,4 +1,5 @@
 from flask import Flask, session, request, render_template, jsonify
+from flask_cors import CORS
 from random import randint
 from controllers.AuthController import AuthController
 from controllers.WatchTitleController import WatchTitleController
@@ -11,6 +12,7 @@ app = Flask(__name__,
             static_folder='./dist/static',
             template_folder='./dist')
 app.secret_key = os.environ.get('ANTRACKER_SECRET_KEY')
+CORS(app, origins=[os.environ.get('CLIENT_HOST')])
 watch_title_controller = WatchTitleController()
 auth_controller = AuthController()
 season_controller = SeasonController()
